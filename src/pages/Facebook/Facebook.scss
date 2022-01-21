@@ -3,8 +3,9 @@
 @use '../../styles/variables' as *;
 
 .Article {
-    background: linear-gradient(black, rgb(59, 72, 81));
     &__img {
+        position: relative;
+        top: 115px;
         width: 100%;
     }
 }

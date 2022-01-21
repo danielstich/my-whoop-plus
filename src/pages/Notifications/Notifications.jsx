@@ -16,7 +16,7 @@ export default class Notifications extends Component {
                 <img className='Main__img' src={home} alt="" />
                 <div className="Main__container">
                     <div className='notifications'>
-                        <NotiNavBar />
+                        <NotiNavBar isIcon={false} text='NOTIFICATION' rightText="CLEAR" link='/Main' />
                         <div className='notifications__container'>
                             <div className='notifications__toolbar'>
                                 <div className='notifications__line notifications__line--left'></div>

@@ -3,12 +3,17 @@
 @use '../../styles/variables' as *;
 
 .noti-navbar {
-    background: transparent;
+    background: black;
     position: fixed;
     width: 390px;
+    z-index: 1;
 
     &__top-image {
         width: 100%;
+    }
+
+    &__center-text {
+        text-align: center;
     }
 
     &__btn-container {
