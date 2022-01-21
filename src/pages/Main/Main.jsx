@@ -19,7 +19,9 @@ export default class Main extends Component {
             <div className="Main">
                 <img className='Main__img' src={home} alt="" />
                 <div className="Main__container">
-                    {this.state.loadSearch && <OccupationSearch />}
+                    <div className="Main__occupation-search">
+                        {this.state.loadSearch && <OccupationSearch />}
+                    </div>
                     {/* <Notifications /> */}
                 </div>
             </div>
