@@ -1,0 +1,43 @@
+@use '../../styles/global' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/variables' as *;
+
+.notifications {
+    position: absolute;
+    background: linear-gradient(black, rgb(59, 72, 81));
+
+    &__toolbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    &__line {
+        position: absolute;
+        border: 1px solid grey;
+        width: 100px;
+        top: 125px;
+        z-index: 0;
+        &--left {
+            left: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__text {
+        position: relative;
+        color: white;
+        z-index: 2;
+        border: 1px solid grey;
+        border-radius: 20px;
+        padding: 0.25rem 5rem;
+    }
+}
