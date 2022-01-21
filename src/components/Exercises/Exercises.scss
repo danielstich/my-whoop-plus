@@ -3,6 +3,9 @@
 @use '../../styles/variables' as *;
 
 .Exercises {
+    // position: absolute;
+    // top: 6rem;
+    // left: 2rem;
     padding: 0 1rem;
 
     &__title {
@@ -15,5 +18,12 @@
     &__img {
         width: 100%;
         background-color: rgb(59, 72, 81);
+    }
+    &__link {
+        position: absolute;
+        width: 85px;
+        height: 20px;
+        right: 30px;
+        bottom: 18px;
     }
 }

@@ -10,6 +10,8 @@ export default function Exercises() {
         RECOMMENDED EXERCISE BASED ON YOUR HEALTH DATA
       </h3>
       <img className="Exercises__img" src={yoga} alt="" />
+      <a className='Exercises__link' href='/YogaPage'></a>
+
     </div>
   );
 }

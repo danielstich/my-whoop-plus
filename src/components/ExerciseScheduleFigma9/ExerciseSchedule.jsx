@@ -9,7 +9,7 @@ function ExerciseSchedule() {
   };
   return (
     <div className="exercise">
-        <Link className="exercise__exit-icon" to=''>
+        <Link to='/YogaPage' className="exercise__exit-icon">
             <img src={exit} alt="" />
         </Link>
         <h2 className="exercise__title">REPEAT BEGINNER YOGA SESSION</h2>
@@ -22,7 +22,7 @@ function ExerciseSchedule() {
             <p className="exercise__schedule">1</p>
             <p className="exercise__schedule">MONTH</p>
         </div>
-        <Link to='' className="exercise__link">CONFIRM</Link>
+        <Link to='/Final' className="exercise__link">CONFIRM</Link>
         
     </div>
   );

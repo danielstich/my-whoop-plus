@@ -26,6 +26,7 @@ function App() {
           <Route path="/Main" exact component={Main} />
           <Route path="/Notifications" component={Notifications} />
           <Route path='/Facebook' component={Facebook}></Route>
+          <Route path="/YogaPage" component={YogaPage}></Route>
           <Route path="/Final" component={Final}></Route>
         </Switch>
       </Router>

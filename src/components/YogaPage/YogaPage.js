@@ -1,15 +1,31 @@
+import {Component} from 'react';
 import "./YogaPage.scss";
 import { Link } from "react-router-dom";
 import page from "../../assets/yogaPage.png";
+import ExerciseSchedule from "../../components/ExerciseScheduleFigma9/ExerciseSchedule";
 
-export default function YogaPage() {
+export default class YogaPage extends Component {
+  state = {
+    isShowDrinkVisible: false
+  }
+
+  showDrink = () => {
+      this.setState({isShowDrinkVisible: true})
+  }
+
+  hideDrink = () => {
+      this.setState({isShowDrinkVisible: false})
+  }
+
+  render (){
   return (
     <div className="YogaPage">
-      <img classname="YogaPage__page" src={page}></img>
+            {this.state.isShowDrinkVisible && <ExerciseSchedule clickHandler={this.hideDrink}/>}
 
-      <Link>
+      <img classname="YogaPage__page" src={page}></img>
+      <div onClick={this.showDrink}>
         <div className="YogaPage__goto"></div>
-      </Link>
+      </div>
 
       <Link>
         <div className="YogaPage__later"></div>
@@ -19,5 +35,5 @@ export default function YogaPage() {
         <div className="YogaPage__back"></div>
       </Link>
     </div>
-  );
+  )}
 }
