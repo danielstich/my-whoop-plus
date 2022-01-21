@@ -8,6 +8,7 @@ function App() {
       <img className='App__img' src={home} alt="" />
       <div className="App__container">
         <OccupationSearch />
+        <h4 className='test'>Words on the page</h4>
       </div>
     </div>
   );
