@@ -1,4 +1,4 @@
-import top_bar from '../../assets/top_bar.png';
+import top_bar from '../../assets/iphone_top.png';
 import back_icon from '../../assets/back_icon.svg';
 import './NotiNavBar.scss'
 
