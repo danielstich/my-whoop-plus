@@ -11,9 +11,7 @@ export default function OccupationSearch () {
             <h5 className='occupation-form__title'>ADD YOUR OCCUPATION</h5>
             <h6 className='occupation-form__subtitle'>FOR OPTIMIZED LIFESTYLE RECOMMENDATION</h6>
             <label htmlFor="careerInput"></label>
-            {/* <Link className='occupation-form__link' to=''> */}
               <input className="occupation-form__input" type="text" name="careerInput" id="careerInput" placeholder="INPUT YOUR OCCUPATION" />
-            {/* </Link> */}
             <Link className='occupation-form__link' to='/Notifications'>
               <img className='occupation-form__arrow' src={arrow} alt="arrow" />
             </Link>
