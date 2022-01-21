@@ -1,0 +1,57 @@
+@use '../../styles/variables' as *;
+
+.occupation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: $neutral-two, $alpha: 0.9);
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    margin: 0rem 1rem;
+    padding: 2rem 0rem;
+
+    &__title {
+        color: $whoop-white;
+    }
+
+    &__subtitle {
+        color: $whoop-white;
+        margin-top: 0rem;
+    }
+
+    &__input {
+        border: 1px solid $whoop-black;
+        border-radius: 5px;
+        padding: 0.5rem;
+        padding-right: 2rem;
+        width: 90%;
+
+        &::placeholder {
+            color: lightgrey;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        left: 20.5rem;
+        top: 24.75rem;
+    }
+
+    &__arrow {
+        width: 1.45rem;
+    }
+
+    &__button {
+        background-color: rgba($color: $neutral-two, $alpha: 0.00001);
+        border: none;
+        font-family: 'Montserrat';
+        color: $whoop-white;
+        padding: 1rem 0rem;
+        font-size: 0.75rem;
+    }
+};

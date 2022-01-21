@@ -1,0 +1,20 @@
+@use "../../styles/global" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+
+.start1 {
+  position: relative;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__link {
+    position: absolute;
+    width: 97.5%;
+    height: 105px;
+    top: 390px;
+    left: 5px;
+    border-radius: 10px;
+  }
+}
