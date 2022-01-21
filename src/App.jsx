@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <img className='App__img' src={home} alt="" />
       <div className="App__container">
-        <OccupationSearch />
+        <div className='App__occupation-search'>
+          <OccupationSearch />
+        </div>
       </div>
     </div>
   );
