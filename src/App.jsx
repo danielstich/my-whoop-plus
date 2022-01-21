@@ -9,6 +9,7 @@ import Main from "./pages/Main/Main";
 import Start1 from "./pages/Start-1/Start1";
 import Start2 from "./pages/Start-2/Start2";
 import Final from "./pages/Final/Final";
+import Facebook from "./pages/Facebook/Facebook";
 
 import Notifications from "./pages/Notifications/Notifications";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Start-2" component={Start2} />
           <Route path="/Main" exact component={Main} />
           <Route path="/Notifications" component={Notifications} />
+          <Route path='/Facebook' component={Facebook}></Route>
           <Route path="/Final" component={Final}></Route>
         </Switch>
       </Router>
