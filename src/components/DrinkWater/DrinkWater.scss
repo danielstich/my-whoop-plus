@@ -1,39 +1,56 @@
-@use "../../styles/variables" as *;
+@use '../../styles/variables' as *;
 
 .water {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba($color: $neutral-two, $alpha: 0.5);
-  border-radius: 5px;
-  border: 1px solid darkgray;
-  margin: 0rem 1rem;
-  padding: 2rem 0rem;
-  position: absolute;
-  margin-top: 25rem;
-  color: $color-background-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba($color: $neutral-two, $alpha: 0.75);
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    margin: 0rem 1rem;
+    padding: 2rem 0rem;
+    color: $color-background-primary;
+    margin-top: 10rem;
+    position: relative;
 
-  &__info {
-    padding: 0rem 3rem;
-    text-align: center;
-    font-size: 0.75rem;
-  }
-
-  &__button {
-    background-color: rgba($color: $neutral-two, $alpha: 0.00001);
-    border: none;
-    font-family: "proxima-nova";
-    color: $whoop-white;
-    padding: 0.5rem 3rem;
-    border: 1px solid $whoop-white;
-    border-radius: 1.25rem;
-
-    &:selected {
-      background-color: rgba($color: $blue, $alpha: 0.00001);
+    &__container {
+        z-index: 3;
+        position: absolute;
+        background-color: rgba($color: black, $alpha: 0.75);
+        width: 390px;
+        height: 843px;
+        top: -125px;
+        left: 0;
     }
-  }
 
-  &__metric {
-    margin-top: -0.1rem;
-  }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        cursor: pointer;
+    }
+
+    &__info {
+        padding: 0rem 3rem;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    &__button {
+        background-color: rgba($color: $neutral-two, $alpha: 0.00001);
+        border: none;
+        font-family: 'proxima-nova';
+        color: $whoop-white;
+        padding: 0.5rem 3rem;
+        border: 1px solid $whoop-white;
+        border-radius: 1.25rem;
+
+        // &:selected {
+        //     background-color: rgba($color: $blue, $alpha: 0.00001);
+        // }
+    }
+
+    &__metric {
+        margin-top: -0.1rem;
+    }
 }

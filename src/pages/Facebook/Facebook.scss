@@ -1,0 +1,11 @@
+@use '../../styles/global' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/variables' as *;
+
+.Article {
+    &__img {
+        position: relative;
+        top: 115px;
+        width: 100%;
+    }
+}

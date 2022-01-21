@@ -4,11 +4,12 @@
 
 .Habits {
     padding: 0 1rem;
+    position: relative;
 
     &__title {
         color: white;
         padding-left: 1rem;
-        margin: 1.5rem 0 1rem 0;
+        margin: 0.5rem 0 1rem 0;
         font-size: 0.8125rem;
     }
 
@@ -26,6 +27,7 @@
     &__action-icon {
         margin-left: 1rem;
         padding-top: 0.25rem;
+        cursor: pointer;
     }
 
     &__text {
