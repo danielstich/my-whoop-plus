@@ -1,0 +1,7 @@
+@use "../../styles/variables" as *;
+
+.water {
+  &__title {
+    color: $color-background-primary;
+  }
+}
