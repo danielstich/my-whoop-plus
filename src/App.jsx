@@ -6,7 +6,8 @@ function App() {
     <div className="App">
       <img className='App__img' src={home} alt="" />
       <div className="App__container">
-        </div>
+        
+      </div>
     </div>
   );
 }
