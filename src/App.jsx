@@ -12,6 +12,8 @@ import Final from "./pages/Final/Final";
 
 import Notifications from "./pages/Notifications/Notifications";
 
+import YogaPage from "./components/YogaPage/YogaPage";
+
 function App() {
   return (
     <div className="App">
