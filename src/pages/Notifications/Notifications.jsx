@@ -16,17 +16,19 @@ export default class Notifications extends Component {
                 <img className='Main__img' src={home} alt="" />
                 <div className="Main__container">
                     <div className='notifications'>
-                        <NotiNavBar />
-                        <div className='notifications__toolbar'>
-                            <div className='notifications__line notifications__line--left'></div>
-                            <img className='notifications__icon' src={drop} alt="" />
-                            <p className='notifications__text'>ALL</p>
-                            <img className='notifications__icon' src={gear} alt="" />
-                            <div className='notifications__line  notifications__line--right'></div>
+                        <NotiNavBar isIcon={false} text='NOTIFICATION' rightText="CLEAR" link='/Main' />
+                        <div className='notifications__container'>
+                            <div className='notifications__toolbar'>
+                                <div className='notifications__line notifications__line--left'></div>
+                                <img className='notifications__icon' src={drop} alt="" />
+                                <p className='notifications__text'>ALL</p>
+                                <img className='notifications__icon' src={gear} alt="" />
+                                <div className='notifications__line  notifications__line--right'></div>
+                            </div>
+                            <Habits />
+                            <Blogs />
+                            <Exercises />
                         </div>
-                        <Habits />
-                        <Blogs />
-                        <Exercises />
                     </div>
                     
                     

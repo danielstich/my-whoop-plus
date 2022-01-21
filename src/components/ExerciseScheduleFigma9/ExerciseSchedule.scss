@@ -1,0 +1,75 @@
+@use "../../styles/variables" as *;
+
+.exercise {
+  display: flex;
+  flex-direction: column;
+//   align-items: center;
+  background-color: rgba($color: $neutral-two, $alpha: 0.9);
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  margin: 0rem 1rem;
+  padding: 2rem 0rem;
+  position: absolute;
+  color: $color-background-primary;
+
+    &__exit-icon {
+        width: 1rem;
+        align-self: flex-end;
+        margin-right: 1rem;
+    }
+
+  &__title {
+      padding-left: 1rem;
+      font-size: 1.25rem;
+  }
+
+  &__time-container {
+      display: flex;
+      padding-left: 1rem;
+  }
+
+  &__clock-icon {
+      width: 1rem;
+  }
+
+  &__info {
+    padding-left: 1rem;
+    font-size: 0.75rem;
+  }
+
+  &__container {
+      align-self: center;
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      border-top: 1px solid #35393C;
+      border-bottom: 1px solid #35393C;
+  }
+
+  &__schedule {
+      text-align: center;
+  }
+
+  &__link {
+    background-color: #35393C;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 0.75rem;
+    color: $whoop-white;
+    padding: 1rem 3rem;
+    margin: 0rem 1rem;
+    margin-top: 4rem;
+    border: 1px solid grey;
+    border-radius: 1.25rem;
+    text-decoration: none;
+    text-align: center;
+
+    &:selected {
+      background-color: rgba($color: $blue, $alpha: 0.00001);
+    }
+  }
+
+  &__metric {
+    margin-top: -0.1rem;
+  }
+}
