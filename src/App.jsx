@@ -1,9 +1,10 @@
 import './App.scss';
+import home from './assets/home_screen.jpeg'
 
 function App() {
   return (
     <div className="App">
-      <h1>My Whoop App</h1>
+      <img className='App__img' src={home} alt="" />
     </div>
   );
 }
