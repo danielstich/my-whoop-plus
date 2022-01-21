@@ -8,7 +8,7 @@ export default function NotiNavBar(props) {
         <div className="noti-navbar">
             <img className="noti-navbar__top-image" src={top_bar} alt="" />
             <div className="noti-navbar__btn-container">
-                <img src={back_icon} alt="" />
+                <img className='noti-navbar__btn' src={back_icon} alt="" />
                 <p>NOTIFICATION</p>
                 <p>CLEAR</p>
             </div>

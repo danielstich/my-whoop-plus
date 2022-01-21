@@ -4,7 +4,7 @@
 
 .notifications {
     position: absolute;
-    background: linear-gradient(rgb(59, 72, 81), black);
+    background: linear-gradient(black, rgb(59, 72, 81));
 
     &__toolbar {
         display: flex;
@@ -15,9 +15,16 @@
     &__line {
         position: absolute;
         border: 1px solid grey;
-        width: 80%;
+        width: 100px;
         top: 125px;
         z-index: 0;
+        &--left {
+            left: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
     }
 
     &__icon {
@@ -32,6 +39,5 @@
         border: 1px solid grey;
         border-radius: 20px;
         padding: 0.25rem 5rem;
-        background-color: black;
     }
 }
