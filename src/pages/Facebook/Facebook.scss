@@ -1,0 +1,9 @@
+@use '../../styles/global' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/variables' as *;
+
+.Article {
+    &__iframe {
+        width: 100%;
+    }
+}
