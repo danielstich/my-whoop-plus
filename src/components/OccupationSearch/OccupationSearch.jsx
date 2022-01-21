@@ -14,7 +14,7 @@ export default function OccupationSearch () {
             {/* <Link className='occupation-form__link' to=''> */}
               <input className="occupation-form__input" type="text" name="careerInput" id="careerInput" placeholder="INPUT YOUR OCCUPATION" />
             {/* </Link> */}
-            <Link className='occupation-form__link' to='/Start-2'>
+            <Link className='occupation-form__link' to='/Notifications'>
               <img className='occupation-form__arrow' src={arrow} alt="arrow" />
             </Link>
             <button className='occupation-form__button'>SKIP FOR NOW</button>
