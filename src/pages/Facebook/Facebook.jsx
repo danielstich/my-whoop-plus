@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NotiNavBar from '../../components/NotiNavBar/NotiNavBar';
 import './Facebook.scss';
 import home from '../../assets/home_screen.jpeg'
+import facebook from '../../assets/medium_article.png'
 
 
 export default class Facebook extends Component {
@@ -12,8 +13,8 @@ export default class Facebook extends Component {
                 <div className="Main__container">
                     <div className='Article'>
                         <NotiNavBar />
-                        <iframe className='Article__iframe' src="https://medium.com/anxy-magazine/facebook-s-mental-health-problem-9c48374c1bd8" frameborder="0"></iframe>
-                    </div>
+                        <img className='Article__img' src={facebook} alt="" />
+                        </div>
                 </div>
             </div>
             );

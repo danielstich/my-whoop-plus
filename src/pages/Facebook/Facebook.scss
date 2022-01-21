@@ -3,7 +3,8 @@
 @use '../../styles/variables' as *;
 
 .Article {
-    &__iframe {
+    background: linear-gradient(black, rgb(59, 72, 81));
+    &__img {
         width: 100%;
     }
 }
