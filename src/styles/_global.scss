@@ -1,8 +1,10 @@
-*,**::before,**::after {
+*,
+**::before,
+**::after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'proxima nova';
+    font-family: 'proxima nova', sans-serif;
     margin: 0rem;
 }
