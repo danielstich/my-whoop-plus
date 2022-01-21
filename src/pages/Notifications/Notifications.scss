@@ -3,8 +3,13 @@
 @use '../../styles/variables' as *;
 
 .notifications {
-    position: absolute;
+    position: relative;
     background: linear-gradient(black, rgb(59, 72, 81));
+
+    &__container {
+        position: relative;
+        top: 90px;
+    }
 
     &__toolbar {
         display: flex;
@@ -15,8 +20,8 @@
     &__line {
         position: absolute;
         border: 1px solid grey;
-        width: 100px;
-        top: 125px;
+        width: 99px;
+        top: 30px;
         z-index: 0;
         &--left {
             left: 0;
