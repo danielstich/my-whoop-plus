@@ -3,7 +3,7 @@
 @use '../../styles/variables' as *;
 
 .noti-navbar {
-    background-color: rgb(59, 72, 81);
+    background: transparent;
 
     &__top-image {
         width: 100%;
@@ -15,5 +15,9 @@
         justify-content: space-between;
         padding: 0 1.5rem;
         color: white;
+    }
+
+    &__btn {
+        margin-right: 1rem;
     }
 }
