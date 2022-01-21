@@ -1,0 +1,9 @@
+@use '../../styles/global' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/variables' as *;
+
+.start1 {
+    &__img {
+        width: 100%;
+    }
+}
