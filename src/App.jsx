@@ -11,6 +11,8 @@ import Start2 from "./pages/Start-2/Start2";
 
 import Notifications from "./pages/Notifications/Notifications";
 
+import YogaPage from "./components/YogaPage/YogaPage";
+
 function App() {
   return (
     <div className="App">
@@ -20,7 +22,8 @@ function App() {
           <Route path="/Start-1" component={Start1} />
           <Route path="/Start-2" component={Start2} />
           <Route path="/Main" exact component={Main} />
-          <Route path="/Notifications" component={Notifications} />
+          {/* <Route path="/Notifications" component={Notifications} /> */}
+          <Route path="/Notifications" component={YogaPage} />
         </Switch>
       </Router>
     </div>
