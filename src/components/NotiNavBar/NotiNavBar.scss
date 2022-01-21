@@ -1,0 +1,17 @@
+@use './styles/global' as *;
+@use './styles/typography' as *;
+@use './styles/variables' as *;
+
+.noti-navbar {
+    background-color: transparent;
+
+    &__top-image {
+        width: 100%;
+    }
+
+    &__btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
